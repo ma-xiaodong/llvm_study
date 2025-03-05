@@ -1,0 +1,4 @@
+make
+../build/exam0
+llvm-dis-10 sum.bc
+cat sum.ll

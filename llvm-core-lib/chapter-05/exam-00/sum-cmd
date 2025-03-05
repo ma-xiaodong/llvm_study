@@ -1,0 +1,6 @@
+opt-10 sum.bc -mem2reg -instcount -o sum-ssa.bc -stats
+# Generate sum-ssa.ll from sum-ssa.bc
+llvm-dis-10 sum-ssa.bc
+# show the execution time
+opt-10 sum.bc -time-passes -mem2reg -o sum-tmp.bc
+
